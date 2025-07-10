@@ -1,0 +1,551 @@
+/* Reset Básico */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Comportamento de Scroll Suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos Globais do Body */
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Paleta de Cores e Estilos de Texto */
+h1, h2, h3 {
+    color: #007bff;
+}
+p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* Header (Simplificado - Antiga Navbar) */
+.section-home {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: transparent;
+    position: relative;
+    z-index: 5;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 170px;
+    height: auto;
+}
+
+/* Oculta elementos da antiga navbar */
+nav, .links, .nav-itens, .botoes, .login, .cadastro {
+    display: none !important;
+}
+
+/* Seção Hero (Bloco Principal da Landing Page) */
+.section-hero-currículo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px 40px 20px;
+    background-color: #e9f7fe;
+    position: relative;
+    overflow: hidden;
+}
+
+.box-titulo-principal h1 {
+    font-size: 3.2em;
+    margin-bottom: 20px;
+    color: #0056b3;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-subtitulo p {
+    font-size: 1.4em;
+    max-width: 700px;
+    margin-bottom: 40px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ESTILOS PARA AS INFORMAÇÕES DA ESPECIALISTA E CTA */
+.box-especialista-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.especialista-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+    text-align: left;
+    max-width: 450px;
+}
+
+.imagem-especialista {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007bff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.descricao-especialista {
+    font-size: 1.1em;
+    color: #444;
+    line-height: 1.4;
+    max-width: 300px;
+}
+
+.descricao-especialista strong {
+    color: #0056b3;
+}
+
+
+/* Botão CTA Principal (do Hero) */
+.botao-whatsapp-hero {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 18px 45px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.botao-whatsapp-hero:hover {
+    background-color: #1DA851;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imagem-home-currículo {
+    max-width: 50%;
+    height: auto;
+    margin-top: 30px;
+}
+
+/* Seção Benefícios */
+.sobre {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin: 30px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+}
+
+.sobre header {
+    margin-bottom: 50px;
+}
+
+.title-sobre {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.descricao-sobre {
+    font-size: 1.1em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.informacoes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 0 1rem;
+}
+
+.informacoes-lista article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+    min-width: 280px;
+    padding: 30px;
+    background-color: #f7f9fc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.informacoes-lista article:hover {
+    transform: translateY(-10px);
+}
+
+.informacoes-lista article h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.informacoes-lista article p {
+    font-size: 1em;
+    color: #666;
+}
+
+.sobre-express {
+    font-size: 2em;
+    padding: 0 4rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Botão CTA Secundário (inferior) */
+.box-botao-cadastrar {
+    margin-bottom: 60px;
+}
+
+.botao-cadastrar {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 18px 45px;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.botao-cadastrar:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* Seção de Depoimentos */
+.section-parceiros {
+    background-color: #e9f7fe;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.box-parceiros {
+    padding: 0;
+}
+
+.box-header-parceiros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.textos-parceiros {
+    flex: 1;
+    padding: 0 40px;
+    text-align: left;
+    min-width: 300px;
+}
+
+.textos-parceiros p {
+    margin: 15px 0;
+    color: #333;
+    font-style: italic;
+}
+
+.textos-parceiros strong {
+    display: block;
+    font-style: normal;
+    font-weight: 700;
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.img-parceiros {
+    width: 350px;
+    height: auto;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.title-parceiros {
+    font-size: 2.5em;
+    color: #0056b3;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Seção Dúvidas/FAQ */
+.section-ajuda {
+    background-color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 30px auto;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.box-ajuda {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.img-ajuda {
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.ajuda-header {
+    width: auto;
+    max-width: 500px;
+    padding: 0;
+    text-align: left;
+}
+
+.title-ajuda {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.ajuda-header p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* CTA Final */
+.box-cta-final {
+    margin-top: 40px;
+}
+
+/* Oculta os antigos cards de ajuda */
+.box-cards {
+    display: none !important;
+}
+
+/* Rodapé */
+.footer-rodape {
+    width: 100%;
+    background-color: #0056b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    transition: background-color 0.5s;
+    margin-top: 60px;
+}
+
+.rodape {
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.footer-rodape:hover {
+    background-color: #003f80;
+}
+
+.politica-privacidade a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-size: 0.9em;
+    transition: color 0.3s ease;
+}
+
+.politica-privacidade a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* --- ANIMAÇÕES DE SCROLL --- */
+.js-scroll {
+    opacity: 0;
+    transform: translateX(100px); /* Começa 100px para a direita */
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transição suave */
+    will-change: opacity, transform; /* Otimização para performance */
+}
+
+/* A classe 'fade-in-slide' é adicionada via JavaScript */
+.js-scroll.fade-in-slide {
+    opacity: 1;
+    transform: translateX(0); /* Desliza para a posição original */
+}
+
+
+/* Media Queries (Responsividade) */
+@media (max-width: 768px) {
+    .section-hero-currículo {
+        padding: 60px 15px 30px 15px;
+    }
+
+    .box-titulo-principal h1 {
+        font-size: 2.5em;
+    }
+
+    .box-subtitulo p {
+        font-size: 1.2em;
+    }
+
+    .box-especialista-cta {
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .especialista-info {
+        flex-direction: column;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .imagem-especialista {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .descricao-especialista {
+        font-size: 1em;
+        max-width: 90%;
+    }
+
+    .botao-whatsapp-hero {
+        padding: 15px 30px;
+        font-size: 1.2em;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .imagem-home-currículo {
+        max-width: 70%;
+    }
+
+    .sobre, .section-parceiros, .section-ajuda {
+        padding: 50px 15px;
+        margin: 20px auto;
+    }
+
+    .title-sobre, .title-parceiros, .title-ajuda {
+        font-size: 1.8em;
+    }
+
+    .informacoes-lista {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .informacoes-lista article {
+        min-width: auto;
+        width: 100%;
+    }
+
+    .sobre-express {
+        font-size: 1.5em;
+        padding: 0 1rem;
+    }
+
+    .botao-cadastrar {
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+
+    .box-header-parceiros {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .textos-parceiros {
+        padding: 0 10px;
+        text-align: center;
+        min-width: auto;
+    }
+
+    .img-parceiros {
+        margin-left: 0;
+        margin-top: 30px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .box-ajuda {
+        flex-direction: column;
+    }
+
+    .img-ajuda {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .ajuda-header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .box-titulo-principal h1 {
+        font-size: 2em;
+    }
+    .box-subtitulo p {
+        font-size: 1em;
+    }
+    .botao-whatsapp-hero, .botao-cadastrar {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+    .imagem-home-currículo {
+        max-width: 90%;
+    }
+    .title-sobre, .title-parceiros, .title-ajuda {
+        font-size: 1.5em;
+    }
+    .sobre-express {
+        font-size: 1.2em;
+    }
+}
