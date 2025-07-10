@@ -16,7 +16,7 @@ const animateOnScroll = (entries, observer) => {
 
 const observer = new IntersectionObserver(animateOnScroll, {
     root: null, // Observa a viewport
-    threshold: 0.6 // A callback será executada quando 20% do elemento estiver visível
+    threshold: 0.2 // A callback será executada quando 20% do elemento estiver visível
 });
 
 sections.forEach(section => {
