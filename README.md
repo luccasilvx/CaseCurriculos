@@ -55,7 +55,7 @@ CaseCurriculos/
 
 Você pode acessar a aplicação em funcionamento através do seguinte link:
 
-[case-curriculos.vercel.app](https://case-curriculos.vercel.app)
+[turbinando-curriculos.vercel.app](https://turbinando-curriculos.vercel.app/)
 
 ---
 
